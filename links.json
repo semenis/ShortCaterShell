@@ -1,0 +1,1 @@
+{"poweroff": "poweroff", "reboot": "shutdown -r now", "print": "echo ", "ping": "ping ya.ru"}
