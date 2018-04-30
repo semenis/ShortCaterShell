@@ -48,6 +48,7 @@ class chortcater:
         elif self.osname == "nt":
             self.data['poweroff'] = "shutdown -s -t 0"
             self.data['reboot'] = "shutdown -r -t 0"
+            self.data['print'] = 'echo '
 
 
 a = chortcater()
