@@ -77,4 +77,8 @@ for i in sys.stdin:
         print('Saved..')
         a.save()
     else:
-        a.exe(i)
+        if len(i.split())>1:
+            if i.split()[0] in a.data:
+                a.exe(i.split()[0], additional_args=' '.join(i.split()[1:]))
+        else:
+            a.exe(i)
